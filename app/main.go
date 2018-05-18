@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"html/template"
 	"math/rand"
 	"net/http"
 	"time"
@@ -14,17 +13,14 @@ type Thanos struct {
 }
 
 func doesThanosSpareYou(w http.ResponseWriter, r *http.Request) {
-	var message string
 	rand.Seed(time.Now().UnixNano())
 	q := rand.Intn(30)
 	if q%13 == 0 {
-		message = "You were spared by Thanos."
+		fmt.Fprintf(w, "You were spared by Thanos.")
 	} else {
-		message = "You were slain by Thanos."
+		fmt.Fprintf(w, "You were slain by Thanos.")
 	}
-	thanos := Thanos{PageTitle: "Did Thanos kill me", Life: message}
-	tmpl := template.Must(template.ParseFiles("index.html"))
-	tmpl.Execute(w, thanos)
+	//fmt.Fprintf(w, "Hello astaxie!") // send data to client side
 }
 
 func main() {
