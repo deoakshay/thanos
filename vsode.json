@@ -1,0 +1,55 @@
+{
+  "go.lintOnSave": "off",
+  "go.vetOnSave": "off",
+  "go.formatTool": "goimports",
+  "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
+  "go.useCodeSnippetsOnFunctionSuggest": false,
+  "go.autocompleteUnimportedPackages": true,
+  "go.toolsGopath": "/usr/local/bin",
+  "workbench.colorTheme": "Arc Dark",
+  "workbench.statusBar.visible": true,
+  "editor.minimap.showSlider": "mouseover",
+  "go.testTimeout": "120s",
+  "go.editorContextMenuCommands": {
+    "testFile": true,
+    "testPackage": false,
+    "generateTestForFunction": true,
+    "addImport": true
+  },
+  "gitlens.mode.statusBar.enabled": true,
+  "files.trimTrailingWhitespace": true,
+  "git.enabled": true,
+  "window.restoreFullscreen": true,
+  "editor.minimap.enabled": false,
+  "go.useLanguageServer": false,
+  "go.docsTool": "gogetdoc",
+  "editor.rulers": [
+    120
+  ],
+  "go.addTags": {
+    "tags": "json,db",
+    "options": "",
+    "promptForTags": true,
+    "transform": "snakecase"
+  },
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#1b316e",
+    "terminal.ansiBrightMagenta": "#530404",
+    "statusBar.foreground": "#fafafc",
+    },
+  //"go.testOnSave": true,
+  "window.zoomLevel": 0,
+  "gitlens.advanced.messages": {
+    "suppressCommitHasNoPreviousCommitWarning": false,
+    "suppressCommitNotFoundWarning": false,
+    "suppressFileNotUnderSourceControlWarning": false,
+    "suppressGitVersionWarning": false,
+    "suppressLineUncommittedWarning": false,
+    "suppressNoRepositoryWarning": false,
+    "suppressResultsExplorerNotice": false,
+    "suppressShowKeyBindingsNotice": true
+  },
+  "git.autofetch": true,
+  "gitlens.historyExplorer.enabled": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+}
